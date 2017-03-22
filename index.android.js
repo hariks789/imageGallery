@@ -18,8 +18,8 @@ export default class imageGallery extends Component {
     return (
       <View  style = { styles.container }>
         <Text style = { styles.title }>Image Gallery</Text>
-      <Info/>
-        </View>
+        <Info/>
+      </View>
     );
   }
 }
@@ -29,14 +29,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#5c6bc0',
-    color: '#fff',
+    backgroundColor: '#fff',
   },
   title: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-    color: '#fff',
+    color: '#5c6bc0',
   },
 });
 

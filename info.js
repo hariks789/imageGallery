@@ -3,11 +3,12 @@
  * For mobile View show potrait view with 2 images per row.
  * For tablet View show landscape view with 4 images per row.
  */
- import React, { Component } from 'react';
+import React, { Component } from 'react';
 import {
     StyleSheet,
     Text,
-    View
+    View,
+    Button,
 } from 'react-native';
 export default class extends Component {
     render() {
@@ -23,6 +24,7 @@ export default class extends Component {
                 <Text>Orientation : Landscape </Text>
                 <Text>Number of images per row : 4 </Text>
               </Text>
+              <Button title="Proceed" color="#5c6bc0"/>
             </View>
         );
     }
@@ -39,7 +41,11 @@ const styles = StyleSheet.create({
         padding: 10,
         borderRadius: 5,
         borderWidth: 0.5,
-        borderColor: '#fff',
-        color: '#fff',
+        borderColor: '#5c6bc0',
+        color: '#5c6bc0',
     },
+    proceed: {
+        flex:1,
+        color: '#fff',
+    }
 })
