@@ -1,4 +1,9 @@
-import React, { Component } from 'react';
+/**
+ * info Component
+ * For mobile View show potrait view with 2 images per row.
+ * For tablet View show landscape view with 4 images per row.
+ */
+ import React, { Component } from 'react';
 import {
     StyleSheet,
     Text,

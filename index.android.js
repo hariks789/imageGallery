@@ -1,7 +1,7 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * image Gallery App
+ * https://github.com/geethujp/imageGallery
+ * author: Geethu Jose
  */
 
 import React, { Component } from 'react';
