@@ -11,7 +11,8 @@ import {
   Text,
   View
 } from 'react-native';
-import Info from './info.js';
+import Info from './info';
+import styles from './styles';
 
 export default class imageGallery extends Component {
   render() {
@@ -23,20 +24,5 @@ export default class imageGallery extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-  },
-  title: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-    color: '#5c6bc0',
-  },
-});
 
 AppRegistry.registerComponent('imageGallery', () => imageGallery);
