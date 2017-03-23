@@ -11,13 +11,13 @@ import {
     ListView
 
 } from 'react-native';
-import styles from './styles';
-
+import styles from './style';
 export default class Gallery extends Component {
 
-  getInitialState: function() {
+  constructor(){
+    super();
     var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    return {
+    this.state = {
       dataSource: ds.cloneWithRows([
         {'name':'Image1', 'image':'http://i.imgur.com/xIzskJl.jpg'},
         {'name':'Image2', 'image':'http://i.imgur.com/qqlSLaQ.jpg'},
@@ -28,10 +28,10 @@ export default class Gallery extends Component {
         {'name':'Image7', 'image':'http://i.imgur.com/eylZ36H.jpg'},
         {'name':'Image8', 'image':'http://i.imgur.com/0SZLGQo.jpg'},
       ]),
-    };
-  },
+    }
+  }
 
-  renderCategory: function(category) {
+  renderCategory(category) {
     return (
       <View style={styles.container}>
         <Image source={{uri: category.image}}>
@@ -42,12 +42,14 @@ export default class Gallery extends Component {
           </View>
         </Image>
       </View>
-  )},
-
-  render: function() {
+  )
+}
+  render() {
     return (
       <ListView
         dataSource={this.state.dataSource}
-        renderRow={this.renderCategory} />
-  )},
+        renderRow={this.renderCategory}
+      />
+    );
+  }
 }
