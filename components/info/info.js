@@ -8,44 +8,26 @@ import {
     StyleSheet,
     Text,
     View,
-    Button,
+    Button
 } from 'react-native';
+import styles from './style';
+
 export default class extends Component {
     render() {
         return (
-            <View style = { styles.container }>
-              <Text style = { styles.wrapper }>
+            <View style = { styles.info_container }>
+              <Text style = { styles.info_wrapper }>
                 <Text>Mobile View </Text>
                 <Text>Orientation : Potrait </Text>
                 <Text>Number of images per row : 2 </Text>
               </Text>
-              <Text style = { styles.wrapper }>
+              <Text style = { styles.info_wrapper }>
                 <Text>Tablet View </Text>
                 <Text>Orientation : Landscape </Text>
                 <Text>Number of images per row : 4 </Text>
               </Text>
-              <Button title="Proceed" color="#5c6bc0"/>
+              <Button title="Proceed" color="#5c6bc0" style = { styles.proceed }/>
             </View>
         );
     }
 }
-const styles = StyleSheet.create({
-    container: {
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    wrapper: {
-        fontSize: 16,
-        textAlign: 'center',
-        margin: 15,
-        padding: 10,
-        borderRadius: 5,
-        borderWidth: 0.5,
-        borderColor: '#5c6bc0',
-        color: '#5c6bc0',
-    },
-    proceed: {
-        flex:1,
-        color: '#fff',
-    }
-})
