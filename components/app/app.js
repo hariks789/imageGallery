@@ -15,7 +15,7 @@ export default class extends Component {
         return (
         <View  style = { styles.container }>
           <Text style = { styles.title }>Image Gallery</Text>
-          <Info/>
+          <Info navigator={this.props.navigator}/>
         </View>
         );
     }
