@@ -11,16 +11,12 @@ import {
   Text,
   View
 } from 'react-native';
-import Info from './info';
-import styles from './styles';
+import App from './components/app/app';
 
 export default class imageGallery extends Component {
   render() {
     return (
-      <View  style = { styles.container }>
-        <Text style = { styles.title }>Image Gallery</Text>
-        <Info/>
-      </View>
+      <App/>
     );
   }
 }

@@ -10,7 +10,7 @@ import {
     View,
     Button
 } from 'react-native';
-import styles from './styles';
+import styles from './style';
 
 export default class extends Component {
     render() {
